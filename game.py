@@ -21,7 +21,7 @@ def updateChoice(x):
    bot= random.choice(secim)
    msgbot.configure(text="BOT CHOOSE "+bot)
    msg.configure(text="YOU CHOOSE "+x)
-#You Lose/kaybettin
+#if you win
    if bot == x :
       winlose.configure(text="ITS A TIE \n")
    elif bot == secim[0] and x == secim[1]:
@@ -30,7 +30,7 @@ def updateChoice(x):
       winlose.configure(text="YOU WIN! Scissors Beats Paper \n")
    elif bot == secim[2] and x == secim[0]:
       winlose.configure(text="YOU WIN! Rock Beats Scissors \n")
-#kaybedersen
+#if you lose
    elif bot == secim[1] and x == secim[0]:
       winlose.configure(text="You Lose. Paper Beats Rock \n")
    elif bot == secim[2] and x == secim[1]:
